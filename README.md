@@ -1,0 +1,2 @@
+# blog
+Open-Minded Blog
