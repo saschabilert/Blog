@@ -6,14 +6,12 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-     <title>About</title>
+     <title>Home</title>
 
      <!-- Bootstrap -->
      <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="css/default.css">
-
-     <!-- Awesome Fonts -->
-     <link href="vendor/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="css/home.css">
 
      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,8 +39,8 @@
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                         <li><a href="posts.html">Posts <span class="sr-only">(current)</span></a></li>
-                         <li class="active"><a href="about.html">About</a></li>
+                         <li><a href="posts.html">Posts</a></li>
+                         <li><a href="about.html">About</a></li>
                          <li><a href="archive.html">Archive</a></li>
                          <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -57,39 +55,42 @@
 
      <div class="container">
           <div class="row">
-               <div class="col-md-3 profile">
-                    <aside>
-                         <img src="img/profile.jpg" alt="profile image" class="img-circle profile-image">
-                         <h4>Sascha Bilert</h4>
-                         <p>Audio Eng. @JADEHS</p>
-                         <hr>
-                         <p>Share this page:</p>
-                         <ul class="clearfix">
-                              <i class="fa fa-facebook" aria-hidden="true"></i>
-                              <i class="fa fa-linkedin" aria-hidden="true"></i>
-                              <i class="fa fa-gitlab" aria-hidden="true"></i>
-                              <i class="fa fa-github" aria-hidden="true"></i>
-                              <i class="fa fa-yahoo" aria-hidden="true"></i>
-                         </ul>
-                    </aside>
-               </div>
+               <h1>A Technic Blog focused on signalprocessing</h1>
+          </div>
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+               <!-- Indicators -->
+               <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+               </ol>
 
-               <div class="col-md-8">
-                    <h1>About</h1>
-                    <div class="lead">
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                         <img src="img/slider/github_logo.jpg">
+                         <div class="carousel-caption">
+                              GitHub Logo
+                         </div>
                     </div>
-                    <hr>
-                    <p>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                         in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-
-                    <p>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                         in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    <div class="item">
+                         <img src="img/slider/javascript_logo.jpg">
+                         <div class="carousel-caption">
+                              JavaScript Logo
+                         </div>
+                    </div>
                </div>
+
+               <!-- Controls -->
+               <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+               </a>
+
+               <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                   <span class="sr-only">Next</span>
+               </a>
           </div>
      </div>
 
